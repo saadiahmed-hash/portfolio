@@ -38,7 +38,9 @@ const App = () => {
 
     <div className='relative z-0 bg-primary'> 
     <div className='relative'>
-      {/* <StarsCanvas></StarsCanvas> */}
+  
+    {!isMobile && <StarsCanvas/>}
+
       <Navbar />
         <Hero />
     </div>
