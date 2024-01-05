@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -21,6 +21,26 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+
+
+
+
+  const [isMobile, setIsMobile] = useState(window.matchMedia('(max-width: 768px)').matches);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    const handleMediaQueryChange = (e) => {
+      setIsMobile(e.matches);
+    };
+
+    mediaQuery.addListener(handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeListener(handleMediaQueryChange);
+    };
+  }, []);
+
+
 
   const handleChange = (e) => {
     const { target } = e;
@@ -140,7 +160,7 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
-        <EarthCanvas />
+         {!isMobile && <EarthCanvas />}
       </motion.div>
     </div>
   );
