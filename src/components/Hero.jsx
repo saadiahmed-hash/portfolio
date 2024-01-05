@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+import HeroPicture from "./canvas/heroPicture"
 
 const Hero = () => {
   const isMobile = window.matchMedia('(max-width: 768px)').matches;
@@ -26,10 +27,18 @@ const Hero = () => {
           </p>
         </div>
       </div>
+   
 
-      {!isMobile && <ComputersCanvas />} {/* Conditionally render ComputersCanvas */}
-
-      <div className='absolute xs:bottom-10 bottom-38 w-full flex justify-center items-center'>
+     
+      {isMobile ? (
+ <HeroPicture/>
+        // Show the phone image for mobile devices
+      ) : (
+        <ComputersCanvas /> // Show ComputersCanvas for non-mobile devices
+      )}
+    
+      
+      {/* <div className='absolute xs:bottom-10 bottom-38 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[30px] h-[54px] rounded-3xl border-4 border-secondary flex justify-center items-start p-1'>
             <motion.div
@@ -45,8 +54,12 @@ const Hero = () => {
             />
           </div>
         </a>
-      </div>
+      </div> */}
+
+
+
     </section>
+    
   );
 };
 

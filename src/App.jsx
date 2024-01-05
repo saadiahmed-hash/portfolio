@@ -3,6 +3,9 @@ import { BrowserRouter } from 'react-router-dom';
 import { useState , useEffect } from 'react';
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 import { FaFacebook, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+
+  
+
 const App = () => {
 
   const [hoveredIcon, setHoveredIcon] = useState(null); // Track hovered icon
