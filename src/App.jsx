@@ -20,7 +20,7 @@ const App = () => {
 
     <div className='relative z-0 bg-primary'> 
     <div className='relative'>
-      <StarsCanvas></StarsCanvas>
+      {/* <StarsCanvas></StarsCanvas> */}
       <Navbar />
         <Hero />
     </div>
