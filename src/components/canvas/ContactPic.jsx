@@ -10,7 +10,8 @@ const ContactPic = () => {
       src={contactSvg}
       alt="Contact Picture"
       width="85%"
-      style={{ marginTop: '-50px' }}
+      style={{ marginTop: '-50px' }
+    }
     />
     </div>
   );

@@ -4,15 +4,15 @@ import loopHero from '../../assets/heroSvg.svg'; // Replace with your phone imag
 
 const HeroPicture = () => {
   return (
-    <div  className='absolute xs:bottom-10 bottom-38 w-full flex justify-center items-center'>
+    <div  className='absolute bottom-38 w-full flex justify-center items-center'>
  <img
       src={loopHero}
       alt="Phone Image"
       style={{
-        width: '60%', // Adjust width as needed
+        width: '70%', // Adjust width as needed
         display: 'block',
-        margin: 'auto',
-        marginTop: '60px', // Adjust margin-top as needed
+        marginTop: '400px',
+        // Adjust margin-top as needed
       }}
     />
    
