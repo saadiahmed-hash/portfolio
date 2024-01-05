@@ -88,19 +88,12 @@ import {
       name: "jetpack",
       icon: jetpack,
     },
-    {
-      name: "Retrofit",
-      icon: retro,
-    },
+  
     {
       name: "RoomDB",
       icon: roomDB,
     }
-    ,
-    {
-      name: "Figma",
-      icon: figma,
-    }, 
+    , 
     {
       name: "xml",
       icon: xml,
