@@ -1,6 +1,6 @@
 
 import { BrowserRouter } from 'react-router-dom';
-import { useState } from 'react';
+import { useState , useEffect } from 'react';
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 import { FaFacebook, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 const App = () => {
@@ -14,6 +14,24 @@ const App = () => {
   const handleIconLeave = () => {
     setHoveredIcon(null); // Reset when the hover ends
   }
+
+
+  const [isMobile, setIsMobile] = useState(window.matchMedia('(max-width: 768px)').matches);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    const handleMediaQueryChange = (e) => {
+      setIsMobile(e.matches);
+    };
+
+    mediaQuery.addListener(handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeListener(handleMediaQueryChange);
+    };
+  }, []);
+
+
   return (
 
     <BrowserRouter>
@@ -83,7 +101,8 @@ const App = () => {
           <p style={{ marginTop: '10px', fontfamily: 'Poppins, sans-serif' }}>SAADI Ahmed © 2024</p>
         </footer>
 
-          <StarsCanvas />
+        {!isMobile && <StarsCanvas />}
+          
         </div>
 
    
