@@ -30,7 +30,7 @@ import {
   import appwrite from '../assets/tech/appwriteLogo.png'
   import streamlit from '../assets/tech/streamlit.png'
   import node from '../assets/tech/node.png'
-  import mlflow from '/home/saadiahmed/portfolio/src/assets/tech/mlfow.svg'
+  import mlflow from '../assets/tech/mlfow.svg'
   import postMan from '../assets/tech/postMan.png'
   import movieSys from '../assets/movieSys.jpeg'
   import estate from '../assets/estate.png'
