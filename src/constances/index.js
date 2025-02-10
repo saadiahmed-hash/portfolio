@@ -32,7 +32,7 @@ import {
   import node from '../assets/tech/node.png'
   import mlflow from '../assets/tech/mlfow.png'
   import postMan from '../assets/tech/postMan.png'
-  import movieSys from '../assets/movieSys.png'
+  import movieSys from '../assets/movieSys.jpeg'
   import estate from '../assets/estate.png'
 
 
