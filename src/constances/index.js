@@ -26,12 +26,12 @@ import {
   import bilel from '../assets/bilel.jpg'
   import amine from '../assets/amine.jpg'
 
-  import gitlab from '../assets/company/gitlab.png'
-  import appwrite from '../assets/company/appwrite.png'
-  import streamlit from '../assets/company/streamlit.png'
-  import node from '../assets/company/node.png'
-  import mlflow from '../assets/company/mlflow.png'
-  import postMan from '../assets/company/postMan.png'
+  import gitlab from '../assets/tech/gitlab.png'
+  import appwrite from '../assets/tech/appwrite.png'
+  import streamlit from '../assets/tech/streamlit.png'
+  import node from '../assets/tech/node.png'
+  import mlflow from '../assets/tech/mlflow.png'
+  import postMan from '../assets/tech/postMan.png'
   import movieSys from '../assets/movieSys.png'
   import estate from '../assets/estate.png'
 
