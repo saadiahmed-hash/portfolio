@@ -27,7 +27,7 @@ import {
   import amine from '../assets/amine.jpg'
 
   import gitlab from '../assets/tech/gitlab.png'
-  import appwrite from '../assets/tech/appwrite.png'
+  import appwrite from '../assets/tech/appwriteLogo.png'
   import streamlit from '../assets/tech/streamlit.png'
   import node from '../assets/tech/node.png'
   import mlflow from '../assets/tech/mlflow.png'
