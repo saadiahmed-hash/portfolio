@@ -26,6 +26,14 @@ import {
   import bilel from '../assets/bilel.jpg'
   import amine from '../assets/amine.jpg'
 
+  import gitlab from '../assets/company/gitlab.png'
+  import appwrite from '../assets/company/appwrite.png'
+  import streamlit from '../assets/company/streamlit.png'
+  import node from '../assets/company/node.png'
+  import mlflow from '../assets/company/mlflow.png'
+  import postMan from '../assets/company/postMan.png'
+  import movieSys from '../assets/movieSys.png'
+  import estate from '../assets/estate.png'
 
 
   
@@ -56,10 +64,14 @@ import {
     {
       title: "Backend Developer",
       icon: backend,
-    },
+    },  
     {
       title: "Content Creator",
       icon: creator,
+    },
+    {
+      title: "Artificial Intelligence enthusiast",
+      icon: backend,
     },
   ];
   
@@ -97,6 +109,34 @@ import {
     {
       name: "xml",
       icon: xml,
+    },
+    {
+      name: "postman",
+      icon: postMan,
+    },
+    {
+      name: "appwrite",
+      icon: appwrite,
+    }
+    ,
+    {
+      name: "node",
+      icon: node,
+    }
+    ,
+    {
+      name: "gitlab",
+      icon: gitlab,
+    }
+    ,
+    {
+      name: "mlflow",
+      icon: mlflow,
+    }
+    ,
+    {
+      name: "streamlit",
+      icon: streamlit,
     }
 
     // here you can add technologies that u can use 
@@ -118,7 +158,39 @@ import {
         ,"Participating in defining project scope, goals, requirements gathering, and creating a roadmap for the project." , 
         "Collaborated within a team to meticulously analyze requirements, comprehensively understanding end-user needs, evaluating business processes, and assessing technical feasibility." , 
       ],
-    } 
+    } ,
+    {
+      "title": "Backend Developer & Technical Documentation",
+      "company_name": "Gestion des Travaux Sociaux (Multidisciplinary project) - ESI SBA",
+      "icon": esi,
+      "iconBg": "#E6DEDD",
+      "date": "February 2024 - June 2024",
+      "points": [
+        "Developing and maintaining the backend of a web application for social work management using modern backend technologies.",
+        "Designing and implementing secure API endpoints to facilitate seamless communication between the frontend and database.",
+        "Writing comprehensive technical documentation, including the project’s functional and technical specifications.",
+        "Collaborating with a cross-functional team, including developers and project stakeholders, to ensure the successful delivery of the system.",
+        "Creating UML diagrams, use case models, and system architecture documentation to support the project's design and implementation.",
+        "Participating in the definition of project scope, requirement gathering, and system analysis to ensure alignment with user needs."
+      ]
+    } , 
+    {
+      "title": "Full-Stack Android Developer",
+      "company_name": "Estate - Real Estate App",
+      "icon": estate, // Replace with actual icon variable
+      "iconBg": "#E6DEDD",
+      "date": "March 2024 - June 2024",
+      "points": [
+        "Developed a custom real estate application tailored to client requirements using Java and Jetpack Compose.",
+        "Implemented advanced search and filtering features based on location, budget, and property type.",
+        "Built a secure, email-verified authentication system for user management.",
+        "Designed and integrated property listing and reservation functionalities, enabling users to book properties for flexible durations.",
+        "Provided dual functionality for property owners to seamlessly post, manage, and update listings.",
+        "Leveraged Firebase for real-time database management and authentication, ensuring a smooth user experience."
+      ]
+    }
+    
+    
 
 
     // here you can add your work project whene ever you want to 
@@ -284,6 +356,40 @@ import {
       source_code_link: "https://github.com/",
       applicationLink: "https://drive.google.com/file/d/1M-Mh98mJp3onHmGpnqSHjcXIqBna38BJ/view?usp=drive_link",
     }, 
+
+
+
+    {
+      name: "Movie Recommendation System",
+      description:
+        "Built a movie recommendation system using Association Rules (Apriori & FPGrowth) with MLflow for MLOps-driven hyperparameter optimization. Integrated Streamlit for an interactive UI and TMDB API for movie posters, enhancing the user experience.",
+      tags: [
+        {
+          name: "Python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "MLflow",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Streamlit",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Apriori",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "FPGrowth",
+          color: "purple-text-gradient",
+        },
+      ],
+      image: movieSys, // Replace with the actual image variable
+      source_code_link: "https://github.com/saadiahmed-hash/movieRec.git", // Replace with actual GitHub link
+      applicationLink: "https://github.com/saadiahmed-hash/movieRec.git", // Replace with actual deployment link
+    },
+    
   ];
   
 

@@ -103,7 +103,7 @@ const App = () => {
           </div>
           <p style={{ marginTop: '10px' , fontfamily: 'Poppins, sans-serif' }} >Phone Number: 05-41-53-30-15 </p>
 
-          <p style={{ marginTop: '10px', fontfamily: 'Poppins, sans-serif' }}>SAADI Ahmed © 2024</p>
+          <p style={{ marginTop: '10px', fontfamily: 'Poppins, sans-serif' }}>SAADI Ahmed © 2025</p>
         </footer>
 
         {!isMobile && <StarsCanvas />}
